@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+:root {
+  --first-color: #222831;
+  --second-color: #393E46;
+  --detail-color: #00ADB5;
+  --text-color: #EEEEEE;
+  --hover-color: #007b82;
+  --background-light: #1b1f24;
+  --shadow: rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: var(--first-color);
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: var(--second-color);
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px var(--shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name a {
+  color: var(--detail-color);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+  scale: 1.4;
+  text-decoration: none;
+}
+
+.name:hover a {
+  transform: scale(1.2);
+}
+
+
+
+.ul-header {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.li-header {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.li-header a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.li-header a:hover {
+  background-color: var(--detail-color);
+  color: var(--first-color);
+  transform: scale(1.1);
+}
+
+.section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.sobre-texto {
+  flex: 1;
+  max-width: 50%;
+}
+
+.foto-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.foto-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projetos-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.projeto-card {
+  background-color: var(--second-color);
+  padding: 1rem;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 8px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px var(--shadow);
+}
+
+.projeto-card h3 {
+  color: var(--detail-color);
+}
+
+.projeto-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--detail-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.projeto-card a:hover {
+  color: var(--hover-color);
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.skills li {
+  background-color: var(--second-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  list-style: none;
+  transition: transform 0.3s ease;
+}
+
+.skills li:hover {
+  transform: scale(1.1);
+  background-color: var(--detail-color);
+}
