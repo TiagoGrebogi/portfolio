@@ -76,18 +76,6 @@ header {
   text-align: center;
 }
 
-h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1.5rem;
-  color: var(--primary-color);
-}
-
-p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto 1.5rem;
-}
-
 .sobre {
   background-color: white;
   padding: 2.2rem 0;
@@ -127,6 +115,10 @@ p {
 .contato-info {
   margin-top: 2rem;
   line-height: 2;
+}
+
+.sobre {
+  background-color: white;
 }
 
 .github-section {
@@ -181,4 +173,14 @@ p {
   .nav-links {
     gap: 1rem;
   }
+}
+
+.python {
+  text-decoration: none;
+  color: rgb(0, 94, 255);
+}
+
+.javascript {
+  text-decoration: none;
+  color: rgb(0, 94, 255);
 }
