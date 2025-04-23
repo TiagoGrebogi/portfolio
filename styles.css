@@ -118,17 +118,6 @@ p {
   object-fit: cover;
 }
 
-.contato-section {
-  background-color: var(--light-bg);
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.contato-info {
-  margin-top: 2rem;
-  line-height: 2;
-}
-
 .github-section {
   background-color: var(--primary-color);
   color: white;
@@ -149,6 +138,5 @@ p {
   text-decoration: none;
   font-weight: bold;
   margin-top: 1.5rem;
-  transition: all 0.3s ease;
   border: 2px solid white;
 }
