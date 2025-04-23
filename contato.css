@@ -95,3 +95,26 @@ header {
   text-decoration: none;
   
 }
+
+.github-section {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.github-section h2 {
+  color: white;
+}
+
+.github-button {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  border: 2px solid white;
+}
